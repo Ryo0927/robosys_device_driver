@@ -26,4 +26,18 @@ LED/3個
 3つのLEDのアノードをgpio25、gpio24、gpio23それぞれにジャンパー線を用いて繋げる。また、カソードもそれぞれGNDにつなげる。
 
 # 実行方法
-git clone 
+
+git clone https://github.com/Ryo0927/robosys_device_driver.git
+cd robosys_device_driver
+make
+sudo insmod myled.ko
+sudo chmod 666 /dev/myled0
+echo 0 > /dev/myled0  //000
+echo 1 > /dev/myled0  //100
+echo 2 > /dev/myled0  //010
+echo 3 > /dev/myled0  //110
+echo 4 > /dev/myled0  //001
+echo 5 > /dev/myled0  //101
+echo 6 > /dev/myled0  //011
+echo 7 > /dev/myled0  //111
+echo 0 > /dev/myled0  //000
