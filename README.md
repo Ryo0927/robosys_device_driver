@@ -13,11 +13,11 @@ LEDを3つ使い光っている状態が1、光っていない状態を0とし�
 
 # 使用道具
 
--Raspberry pi 3B+/1台
--LED/3個
--ブレッドボード/1枚
--ジャンパー線 オスーメス/6本
--抵抗/3個
+- Raspberry pi 3B+/1台
+- LED/3個
+- ブレッドボード/1枚
+- ジャンパー線 オスーメス/6本
+- 抵抗/3個
 
 # 回路
 
@@ -27,17 +27,17 @@ LEDを3つ使い光っている状態が1、光っていない状態を0とし�
 
 # 実行方法
 
--git clone https://github.com/Ryo0927/robosys_device_driver.git
--cd robosys_device_driver
--make
--sudo insmod myled.ko
--sudo chmod 666 /dev/myled0
--echo 0 > /dev/myled0  //000
--echo 1 > /dev/myled0  //100
--echo 2 > /dev/myled0  //010
--echo 3 > /dev/myled0  //110
--echo 4 > /dev/myled0  //001
--echo 5 > /dev/myled0  //101
--echo 6 > /dev/myled0  //011
--echo 7 > /dev/myled0  //111
--echo 0 > /dev/myled0  //000
+- git clone https://github.com/Ryo0927/robosys_device_driver.git
+- cd robosys_device_driver
+- make
+- sudo insmod myled.ko
+- sudo chmod 666 /dev/myled0
+- echo 0 > /dev/myled0  //000
+- echo 1 > /dev/myled0  //100
+- echo 2 > /dev/myled0  //010
+- echo 3 > /dev/myled0  //110
+- echo 4 > /dev/myled0  //001
+- echo 5 > /dev/myled0  //101
+- echo 6 > /dev/myled0  //011
+- echo 7 > /dev/myled0  //111
+- echo 0 > /dev/myled0  //000
