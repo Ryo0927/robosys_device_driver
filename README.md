@@ -22,4 +22,4 @@ LED/3個
 # 回路
 
 以下のように回路を組みました。
-![IMAGE OF ROBOT](./robosys_device_driver/ロボシス.JPG)
+![IMAGE OF ROBOT](./robosys_device_driver/ロボシス.jpg)
