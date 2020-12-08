@@ -28,11 +28,11 @@ LEDを3つ使い光っている状態が1、光っていない状態を0とし�
 # 実行方法
 
 ```
-$git clone https://github.com/Ryo0927/robosys_device_driver.git
-$cd robosys_device_driver
-$make
-$sudo insmod myled.ko
-$sudo chmod 666 /dev/myled0
+$git clone https://github.com/Ryo0927/robosys_device_driver.git  //クローン
+$cd robosys_device_driver  //ディレクトリの移動
+$make  //カーネルのモジュールの作成
+$sudo insmod myled.ko  //カーネルモジュールのインストール
+$sudo chmod 666 /dev/myled0  //パーミッションの変更
 $echo 0 > /dev/myled0  //000
 $echo 1 > /dev/myled0  //100
 $echo 2 > /dev/myled0  //010
@@ -42,4 +42,5 @@ $echo 5 > /dev/myled0  //101
 $echo 6 > /dev/myled0  //011
 $echo 7 > /dev/myled0  //111
 $echo 0 > /dev/myled0  //000
+$sudo rmmod myled  //カーネルモジュールのアンインストール
 ```
