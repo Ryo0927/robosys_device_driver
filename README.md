@@ -27,7 +27,7 @@ LEDを3つ使い光っている状態が1、光っていない状態を0とし�
 
 # 実行方法
 
-''' git clone https://github.com/Ryo0927/robosys_device_driver.git '''
+' git clone https://github.com/Ryo0927/robosys_device_driver.git '
 - cd robosys_device_driver
 - make
 - sudo insmod myled.ko
