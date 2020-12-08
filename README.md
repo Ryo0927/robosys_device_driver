@@ -27,7 +27,7 @@ LEDを3つ使い光っている状態が1、光っていない状態を0とし�
 
 # 実行方法
 
-'''
+```
 git clone https://github.com/Ryo0927/robosys_device_driver.git
 - cd robosys_device_driver
 - make
@@ -42,4 +42,4 @@ git clone https://github.com/Ryo0927/robosys_device_driver.git
 - echo 6 > /dev/myled0  //011
 - echo 7 > /dev/myled0  //111
 - echo 0 > /dev/myled0  //000
-'''
+```
